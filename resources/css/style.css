@@ -1,0 +1,32 @@
+/*CSS rules grouped from least specific to most specific, top to bottom (1. *, html, body[if/when they are neccesary]; 2. tags; 3. classes; 4. ids)*/
+/*Within groups, selectors are in alphabetical order, as are declarations within selectors*/
+* {            /*Resets user agent stylesheet defaults*/
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: inline-block;
+  flex: 1 500px;
+  margin-left: 250px;
+}
+
+.container {   /*flex containers*/
+
+}
+
+.header {
+  border: 1px solid black;
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+.title { /*Includes logo and site name*/
+  color: MediumAquamarine;
+
+}
