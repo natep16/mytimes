@@ -5,14 +5,72 @@
   padding: 0;
 }
 
-nav {
-  display: inline-block;
-  flex: 1 500px;
-  margin-left: 250px;
+body {
+  font-family: Georgia;
 }
 
-.container {   /*flex containers*/
+h1, h2, #bites-title{
+  font-weight: bold;
+  text-align: center;
+}
 
+
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+nav {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 250px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+p {
+  font-size: 17px;
+  color: black;
+}
+
+span {
+
+}
+
+.background-image {  /*headlines with background image*/
+  align-items: center;
+  color: white;
+  display: inline-flex;
+  height: 300px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.bites-head { /*headline in news bites*/
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  height: 1100px;
+  justify-content: space-around;
+  margin: 30px 0;
+
+  border: 2px dotted red;
+}
+
+.footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
 }
 
 .header {
@@ -21,12 +79,129 @@ nav {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  height: 50px;
+  height: 70px;
   position: fixed;
   width: 100%;
 }
 
-.title { /*Includes logo and site name*/
-  color: MediumAquamarine;
+.main {  /*Everything except the header and footer*/
+  display: flex;
+  height: 2000px;
+  justify-content: space-around;
+  margin: 0 80px;
+  position: relative;
+  top: 70px;
+  width: 1300px;
+}
 
+.news-bites { /*group of news bites story headlines*/
+  background-color: WhiteSmoke;
+  color: DimGray;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: normal;
+  height: 200px;
+  justify-content: space-around;
+}
+
+.sec-stories {
+  display: inline-flex;
+  height: 560px;
+  justify-content: space-between;
+  width: 100%;
+
+  border: 2px dotted green;
+}
+
+.sec-story {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sub-column {
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  width: 47%;
+
+  border: 2px solid blue;
+}
+
+.title { /*Includes logo and site name*/
+  align-items: center;
+  color: MediumAquamarine;
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 150px;
+  flex: 1 150px;
+}
+
+.title img {  /*logo*/
+  height: 55px;
+  margin-left: 10px;
+  width: 55px;
+}
+
+.title span { /*text in title*/
+  margin: auto 10px;
+}
+
+#cat { /*head with cat image*/
+  background-image: url("../images/cat.png");
+}
+
+#column1 {
+  height: 1100px;
+  width: 630px;
+}
+
+#column2 {
+  height: 750px;
+  width: 300px;
+}
+
+#column3 {
+  height: 600px;
+  width: 240px;
+}
+
+#long-text { /*stories with no image that are long*/
+  height: 380px;
+
+  border: 5px solid pink;
+}
+
+#main-head {
+  background-image: url("../images/main.png");
+  color: white;
+  height: 300px;
+  overflow: hidden;
+}
+
+#main-story {
+  display: inline-flex;
+  flex-direction: column;
+  height: 505px;
+  justify-content: space-between;
+  width: 100%;
+
+  border: 2px solid green;
+}
+
+#memory-erase {  /*Headline about memory*/
+  background-image: url("../images/hipster.png");
+}
+
+#short-text {  /*stories with no image that are short*/
+  height: 225px;
+
+  border: 5px solid pink;
+}
+
+#world-flat { /*story with Earth Flat headline*/
+  background-image: url("../images/fall.png");
 }
