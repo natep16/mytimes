@@ -5,17 +5,16 @@
   padding: 0;
 }
 
-body {
+body { /*Changes default font for body to Georgia*/
   font-family: Georgia;
 }
 
-h1, h2, #bites-title{
+h1, h2, #bites-title{  /*Changes default for headlines and titles to be bold and aligned in center*/
   font-weight: bold;
   text-align: center;
 }
 
-
-
+/*Changes font-size for headers*/
 h1 {
   font-size: 40px;
 }
@@ -24,7 +23,7 @@ h2 {
   font-size: 30px;
 }
 
-nav {
+nav {  /*Styling for navigation links (in header)*/
   align-items: center;
   display: inline-flex;
   flex: 0 250px;
@@ -33,13 +32,8 @@ nav {
   margin-right: 40px;
 }
 
-p {
+p {  /*Sets font size for paragraph text*/
   font-size: 17px;
-  color: black;
-}
-
-span {
-
 }
 
 .background-image {  /*headlines with background image*/
@@ -56,24 +50,43 @@ span {
   padding: 5px;
 }
 
-.column {
+.column {  /*Each of the three main vertical columns of webpage*/
   display: inline-flex;
   flex-direction: column;
   height: 1100px;
   justify-content: space-around;
   margin: 30px 0;
-
-  border: 2px dotted red;
 }
 
-.footer {
+.copyright { /*Copyright in header*/
+  font-weight: normal;
+}
+
+.footer {  /*Footer of page*/
+  align-items: center;
   background-color: MediumAquamarine;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  height: 375px;
+  justify-content: center;
   margin: auto;
-  font-family: Verdana;
-  font-size: 12px;
+  padding: auto 500px;
 }
 
-.header {
+.footer-item {  /*Spaces footer items*/
+  margin: 20px;
+}
+
+.footer-nav {  /*List of links in header*/
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.header {  /*Header of page*/
+  background-color: white;
   border: 1px solid black;
   display: flex;
   font-family: Verdana;
@@ -82,11 +95,12 @@ span {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
-.main {  /*Everything except the header and footer*/
+.main {  /*Main section of page*/
   display: flex;
-  height: 2000px;
+  height: 1250px;
   justify-content: space-around;
   margin: 0 80px;
   position: relative;
@@ -94,7 +108,7 @@ span {
   width: 1300px;
 }
 
-.news-bites { /*group of news bites story headlines*/
+.news-bites { /*list of news bites story headlines*/
   background-color: WhiteSmoke;
   color: DimGray;
   display: inline-flex;
@@ -106,32 +120,28 @@ span {
   justify-content: space-around;
 }
 
-.sec-stories {
+.split-container {  /*contains the two sub-columns in large column on left*/
   display: inline-flex;
   height: 560px;
   justify-content: space-between;
   width: 100%;
-
-  border: 2px dotted green;
 }
 
-.sec-story {
+.sec-story {  /*Secondary stories on page*/
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.sub-column {
+.sub-column {  /*Each of the sub-columns in split-container*/
   display: inline-flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
   width: 47%;
-
-  border: 2px solid blue;
 }
 
-.title { /*Includes logo and site name*/
+.title { /*Includes logo and site name in header*/
   align-items: center;
   color: MediumAquamarine;
   display: inline-flex;
@@ -140,66 +150,66 @@ span {
   flex: 1 150px;
 }
 
-.title img {  /*logo*/
+.title img {  /*logo in header*/
   height: 55px;
   margin-left: 10px;
   width: 55px;
 }
 
-.title span { /*text in title*/
+.title span { /*text in title in header*/
   margin: auto 10px;
 }
 
-#cat { /*head with cat image*/
+#cat { /*headline with cat image*/
   background-image: url("../images/cat.png");
 }
 
-#column1 {
+#column1 { /*Large main column on left*/
   height: 1100px;
   width: 630px;
 }
 
-#column2 {
+#column2 {  /*Medium-sized main column in middle*/
   height: 750px;
   width: 300px;
 }
 
-#column3 {
+#column3 {  /*Small main column on right*/
   height: 600px;
   width: 240px;
 }
 
-#long-text { /*stories with no image that are long*/
-  height: 380px;
-
-  border: 5px solid pink;
+#footer-title {  /*Title in header before links*/
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 38px;
 }
 
-#main-head {
+#long-text { /*long stories with no image*/
+  height: 380px;
+}
+
+#main-head {  /*headline of main story in large left column*/
   background-image: url("../images/main.png");
   color: white;
   height: 300px;
   overflow: hidden;
 }
 
-#main-story {
+#main-story { /*contains main-head and following text*/
   display: inline-flex;
   flex-direction: column;
   height: 505px;
   justify-content: space-between;
   width: 100%;
-
-  border: 2px solid green;
 }
 
 #memory-erase {  /*Headline about memory*/
   background-image: url("../images/hipster.png");
 }
 
-#short-text {  /*stories with no image that are short*/
+#short-text {  /*short stories with no image*/
   height: 225px;
-
-  border: 5px solid pink;
 }
 
 #world-flat { /*story with Earth Flat headline*/

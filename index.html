@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head>  <!--Metadata for webpage-->
     <link href="resources/css/style.css" type="text/css" rel="stylesheet"/>
     <meta charset="utf-8">
     <title>My Times</title>
   </head>
   <body>
-    <!--Header of page including links to navigate to other pages on site-->
-    <div class="header">
+    <div class="header">  <!--Header of page including logo, title, and links to navigate to other pages on site-->
       <div class="title">
         <img src="resources/images/logo.jpg" alt="My Times logo">
         <span id="title-text">My Times</span>
@@ -19,16 +18,16 @@
         <span><a href="">Science</a></span>
       </nav>
     </div>
-    <div class="main">
-      <div class="column" id="column1">
-        <div id="main-story">
+    <div class="main">  <!--Main section of page-->
+      <div class="column" id="column1">  <!--Large column on left-->
+        <div id="main-story"> <!--First story in large column (Web Developer...)-->
           <div class="background-image" id="main-head">
             <h1>Web Developer Refuses to Publish the Right Headlines</h1>
           </div>
           <p>SpaceX Settlement, Mars - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.</p>
         </div>
-        <div class="sec-stories">
-          <div class="sub-column">
+        <div class="split-contatiner"> <!--Contains the two stories split into sub-columns-->
+          <div class="sub-column">  <!--Left sub-column-->
               <div class="sec-story" id="short-text">
                 <h2>The Newest Political Scandal is Just as Stupid</h2>
                 <p>United States, Again - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
@@ -37,7 +36,7 @@
                 <h2 class="background-image" id="world-flat">2018, the Year the World Became Flat</h2>
               </div>
           </div>
-          <div class="sub-column">
+          <div class="sub-column">  <!--Right sub-column-->
             <div class="sec-story" id="short-text">
               <h2>Revenge for Breakfast: How Early is too Early?</h2>
               <p>Rome, Italy — Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
@@ -48,20 +47,19 @@
           </div>
         </div>
       </div>
-      <div class="column" id="column2">
+      <div class="column" id="column2">  <!--Medium-sized column in middle-->
           <div class="sec-story" id="long-text">
             <h2>FBI Accuses FBI of Intelligence</h2>
             <p>WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p>
           </div>
           <div class="sec-story">
             <h2 class="background-image" id="cat">Cats in Control-You don't care about this</h2>
-            <p></p>
           </div>
         </div>
-      <div class="column" id="column3">
+      <div class="column" id="column3">  <!--Small column on right-->
           <img src="resources/images/cookie.png" alt="Bitten cookie">
           <span id="bites-title">NEWS BITES</span>
-          <div class="news-bites">
+          <div class="news-bites">  <!--List of "news bites" stories-->
             <span class="bites-head">Cat Emoji Goes Viral</span>
             <span class="bites-head">Buy Youtube Views</span>
             <span class="bites-head">Home Business Advertising Ideas</span>
@@ -69,16 +67,18 @@
             <span class="bites-head">Illustration in Marketing Materials</span>
             <span class="bites-head">Finally a Top Secret Way You Can</span>
           </div>
-          <h2></h2>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <span>My Times     |</span>
-      <span><a href="">World</a></span>
-      <span><a href="">U.S.</a></span>
-      <span><a href="">Tech</a></span>
-      <span><a href="">Science</a></span>
+    <div class="footer"> <!--Footer of page including links and copyright-->
+      <div class="footer-nav">  <!--Links in footer-->
+        <span class="footer-item" id="footer-title">My Times</span>
+        <span class="footer-item"><a href="">World</a></span>
+        <span class="footer-item"><a href="">U.S.</a></span>
+        <span class="footer-item"><a href="">Tech</a></span>
+        <span class="footer-item"><a href="">Science</a></span>
+      </div>
+      <p class="copyright">© 2018, My Times (A Division of Out-There Media)</p>
     </div>
   </body>
 </html>
